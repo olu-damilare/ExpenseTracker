@@ -28,12 +28,12 @@ class MyApp extends StatelessWidget {
           errorColor: Colors.red,
           fontFamily: 'Cabin',
           textTheme: ThemeData.light().textTheme.copyWith(
-              title: GoogleFonts.abhayaLibre(fontSize: 16, fontWeight: FontWeight.bold),
+              subtitle1: GoogleFonts.abhayaLibre(fontSize: 16, fontWeight: FontWeight.bold),
           button: TextStyle(color: Colors.white),
       ),
           appBarTheme: AppBarTheme(
               textTheme: ThemeData.light().textTheme.copyWith(
-                  title: GoogleFonts.abhayaLibre(fontSize: 20)))),
+                  subtitle1: GoogleFonts.abhayaLibre(fontSize: 20)))),
     );
   }
 }
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   }
 
   @override
-  didChangeAppLifecycleState(AppLifecycleState state){
+  void didChangeAppLifecycleState(AppLifecycleState state){
     print(state);
   }
 
