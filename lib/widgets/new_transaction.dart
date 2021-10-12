@@ -15,6 +15,11 @@ class _NewTransactionState extends State<NewTransaction> {
   final _amount = TextEditingController();
   DateTime? _selectedDate;
 
+  @override
+  void didUpdateWidget(NewTransaction oldWidget){
+    super.didUpdateWidget(oldWidget);
+  }
+
   void _submitData() {
     // if(_title.text.isEmpty || _amount.text.isEmpty || _selectedDate == null) return;
 
